@@ -10,11 +10,11 @@
   };
 
   socket.on("ready", () => {
-      socket.emit("ready-response", {data: "this bike's ready from app svelte 007"});
+      socket.emit("ready-response", {data: "this bike's ready from app svelte 009"});
     });
 
     function hitIO() {
-      socket.emit("ready", {data: "this is hitIO in appsvel 007"})
+      socket.emit("ready", {data: "this is hitIO in appsvel 009"})
     }
   
 

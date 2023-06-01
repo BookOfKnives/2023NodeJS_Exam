@@ -2,12 +2,12 @@ import express from "express";
 const app = express();
 const API_PORT = 8080;
 app.use(express.json());
+import cors from "cors";
+app.use(cors());
 
 import userapi from "./userapi.js";
 app.use(userapi);
 
-import cors from "cors";
-app.use(cors());
 
 import http from "http";
 const httpServer = http.createServer(app);
